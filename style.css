@@ -1,0 +1,102 @@
+body {
+  font-family: Arial, sans-serif, monospace;
+  margin: 0;
+  padding: 0;
+  background-color: black;
+}
+
+header {
+  background-color: black;
+  color: red;
+  text-align: start;
+  padding: 1rem;
+}
+
+main {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 15px 30px 10px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-top: 10px;
+}
+
+.search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+  gap: 20px;
+  border: none;
+  
+}
+
+.head1 ,span{
+  color: blue;
+}
+
+.input1{
+border: 1px solid red;
+  border-radius: 20px;
+}
+
+input[type="text"], button {
+  padding: 0.5rem;
+  width: 60%;
+}
+
+button {
+  padding: 0.5rem 1rem;
+  background-color: red;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 20px;
+}
+
+.stock-info {
+  border: 1px solid;
+  border-color: red;
+  padding: 1rem;
+  border-radius: 30px;
+  
+}
+
+#stockData {
+  margin-top: 1rem;
+  display: flex;
+  flex-flow: column;
+  justify-items: center;
+  font-family: monospace;
+}
+
+/* Mobile responsiveness */
+@media (max-width: 600px) {
+  .search {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  input[type="text"], button {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+}
+
+/* Animation */
+.fade-in {
+  opacity: 0;
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
